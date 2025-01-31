@@ -14,7 +14,7 @@ def readExtractPDF(pdf_list:list):
         try: 
             for pdf in pdf_list:
                 #Needs to be converted to 'convert_from_bytes' in Streamlit
-                images = convert_from_bytes(pdf.read(), poppler_path=r'src\poppler-24.08.0\Library\bin', fmt='tiff')
+                images = convert_from_bytes(pdf.read(), poppler_path=r'poppler-24.08.0\Library\bin', fmt='tiff')
             
                 for image in images:
                     result = ocr.ocr(np.array(image), cls=True, det=True, rec=True)
