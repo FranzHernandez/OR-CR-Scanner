@@ -1,9 +1,9 @@
-from src.office365_api import SharePoint
+from office365_api import SharePoint
 from datetime import date
 import pandas as pd
 import io
 import streamlit as st
-from src.office365_api import base64decoder
+from office365_api import base64decoder
 
 today = str(date.today())
 sharepoint = SharePoint()

@@ -1,8 +1,8 @@
 import hmac
 import streamlit as st
-from src.office365_api import base64decoder
-from src.ocr import readExtractPDF
-from src.download_reupload import get_file
+from office365_api import base64decoder
+from ocr import readExtractPDF
+from download_reupload import get_file
 
 def check_password():
     """Returns `True` if the user had the correct password."""
